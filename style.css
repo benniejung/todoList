@@ -1,0 +1,228 @@
+@font-face {
+    font-family: 'Gulim', sans-serif;
+    font-weight: 600;
+}
+
+@media screen {
+    .container {
+        flex-direction: column;
+    }
+    .main_wrapper{
+        flex-direction: column;
+    }
+}
+
+:root {
+    --inputFormColor: rgb(233, 228, 228);
+}
+
+body {
+    font-family: 'Gulim', sans-serif;
+    font-weight: 600;
+}
+.backgroundBg {
+    background-color: rgb(116, 134, 215);
+
+}
+
+
+.hidden {
+    display: none;
+}
+.container {
+    margin: auto;
+    padding-top: 20px;
+    width: 1050px;
+    height: 950px;
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 17px;
+    border: 3px solid black;
+
+}
+.main_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.main {
+    margin: 20px;
+}
+.dateClockBox {
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    font-size: 40px;
+}
+.p {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.profile {
+    text-align: center;
+}
+.nameForm input {
+    border-style: none;
+    border-radius: 10px;
+    background-color:var(--inputFormColor);
+    width: 200px;
+    height: 30px;
+    padding-left: 100px
+}
+.img_btn {
+    appearance: none;
+    border-style: none;
+    background-color: white;
+}
+.img_btn > img {
+    border-radius: 90px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-gap: 5px;
+    text-align: center;
+}
+.btn {
+    border: 1px solid blue;
+    width: 25px;
+    height: 25px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.prev {
+    border-width: 0 0 2px 2px;
+}
+.next {
+    border-width: 2px 2px 0 0;
+}
+.div_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    padding: 5px;
+}
+.cal_info {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.cal_day {
+    color: blue;
+    margin-bottom: 20px;
+}
+.profileAndCal {
+    border:none;
+    border-radius: 15px;
+    background-color: white;
+    margin-bottom: 10px;
+    
+}
+.calContainer {
+    border: 3px solid black;
+    margin-top: 10px;
+    padding: 8px;
+}
+.cal_content div {
+    text-align: center;
+    padding-top: 10px;
+}
+.cal_content div:not(.nothing) {
+    width: 50px;
+    height: 30px;
+}
+.cal_content div:not(.nothing):hover {
+    background-color: rgb(32, 93, 146);
+    color: white;
+    cursor: pointer;
+}
+.select {
+    background-color: rgb(32, 93, 146);
+    color: white;
+}
+.img_container {
+    display: flex;
+    justify-content: space-evenly;
+}
+#background {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 25px;
+}
+.img_container > div > img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.background_container {
+    border: none;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+}
+.todoContainer {
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+}
+.todoContainer > p {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0;
+}
+#todo_list {
+    width: 500px;
+    height: 600px;
+    list-style: none;
+    overflow: auto;
+}
+#todo_list li {
+    margin-bottom: 20px;
+    position: relative;
+}
+#todo_list input[type="checkbox"] {
+    width:30px;
+    height: 30px;
+    margin-right: 10px;
+}
+#todo_list input[type="checkbox"]:checked ~ span {
+    text-decoration: line-through;
+    color: gray;
+}
+#todo_list button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    position: absolute;
+    right: 10px;
+}
+#todo_list span {
+    font-size: 1.2rem;
+}
+#todo_form {
+    width: 100%;
+}
+#todo_form > input {
+    width: 97%;
+    height: 60px;
+    border-radius: 15px;
+    border: none;
+    padding-left: 10px;
+    background-color: var(--inputFormColor);
+}
+#selectDay {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+

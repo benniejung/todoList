@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Yeppi </title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="greeting.js"></script>
+    <script defer src="calendar.js"></script>
+    <script defer src="clock.js"></script>
+    <script defer src="todolist.js"></script>
+    <script defer src="background.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3ESRQNQJ09"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-3ESRQNQJ09');
+    </script>
+  </head>
+  <body class="backgroundBg">
+    <!--시계-->
+    <section class="container">
+      <div class="dateClockBox">
+        <div id="todayDate"></div>
+        <div id="clock"></div>
+      </div>
+      <div class="main_wrapper">
+        <div class="main mainLeft">
+          <div class="profileAndCal">
+            <div class="profile">
+              <p class="p">My Page</p>
+              <button class="img_btn">
+                <img src="me.png" width="200" height="200">
+              </button>
+              <input type="file" id="file" class="hidden">
+              <p id="greeting" class="hidden"> </p>
+              <form class="nameForm">
+                <input id="nameInput" class="hidden" placeholder="이름을 입력하세요"> 
+              </form>
+            </div>
+      
+            <div class="calContainer">
+              <div class="div_top">
+                <div class="btn prev"></div>
+                <div class="cal_info"></div>
+                <div class="btn next"></div>
+              </div>
+          
+              <div class="grid cal_day">
+                <div>일</div>
+                <div>월</div>
+                <div>화</div>
+                <div>수</div>
+                <div>목</div>
+                <div>금</div>
+                <div>토</div>
+              </div>
+          
+              <div class="grid cal_content"></div>
+            </div>
+          </div>
+        <!--배경-->
+        <div class="background_container">
+          <p id="background">BACKGROUND</p>
+          <div class="img_container">
+            <div><img src="one color.png" id="one_color"> one color</div>
+            <div><img src="gradient.jpg" id="gradient">gradient</div>
+          </div>
+        </div>        
+      </div>
+      <!--투두리스트-->
+      <div class="main mainRight">
+        <div class="todoContainer">
+          <div id="selectDay"></div>
+          <p>TO DO</p>
+          <ul id="todo_list"></ul>
+        
+          <form id="todo_form">
+            <input type="text" placeholder="오늘의 할일을 적어주세요!"required>
+          </form> 
+        </div>
+      </div>
+     
+    </section>
+  </body>
+
+
+</html>
+
+
+
+
+
+
